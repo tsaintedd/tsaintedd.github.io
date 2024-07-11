@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Your Animal Knowledge! | Singapore Zoo</title>
+  <style>
+    @font-face {
+        font-family: "ValueSerifRegular";
+        src: url("./Fonts/ValueSerifRegular.ttf");
+    }
+
+    @font-face {
+        font-family: "ValueSerifBold";
+        src: url("./Fonts/ValueSerifBold.ttf");
+    }
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(bg.jpg);
+}
+.header {
+            width: 80%;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header img {
+            width: 200px;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 12.5px 20px;
+            background-color: #222;
+            color: #fff;
+            position: absolute;
+            bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+            text-decoration: none;
+            font-family: ValueSerifBold;
+            border-radius: 100px;
+            font-size: 18px;
+            margin-top: 10px;
+            transition-duration: 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #515151;
+        }
+.app{
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 60px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+.app h1{
+  font-size: 25px;
+  color: #001e4d;
+  font-family: ValueSerifBold;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+.quiz{
+  padding: 20px 0;
+}
+.quiz h2{
+  font-size: 18px;
+  font-family: ValueSerifRegular;
+  color: #001e4d;
+  font-weight: 600;
+}
+.btn{
+  background: #fff;
+  color: #222;
+  font-family: ValueSerifBold;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+  background: #222;
+  color: #fff;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+#next-btn{
+  background: #001e4d;
+  color: #fff;
+  font-family: ValueSerifBold;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
+}
+</style>
+
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Singapore Zoo Logo">
+</div>
+<div class="app">
+  <h1>Test your animal knowledge!</h1>
+  <div class="quiz"></div>
+  <h2 id="question">Question here</h2>
+  <div id="answer-buttons">
+    <button class="btn">Answer 1</button>
+    <button class="btn">Answer 2</button>
+    <button class="btn">Answer 3</button>
+    <button class="btn">Answer 4</button>
+  </div>
+  <button id="next-btn">Next</button>
+  <a href="https://www.mandai.com/en/singapore-zoo.html" class="home-button">Take me back to the homepage!</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
